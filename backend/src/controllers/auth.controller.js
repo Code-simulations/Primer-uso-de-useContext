@@ -30,10 +30,9 @@ export const login = async (req, res) => {
 
 export const session = async (req, res) => {
   try {
-    console.log(req.user);
     res.json(req.user);
   } catch (error) {
-    console.log(errors);
+    console.log(error);
   }
 };
 
